@@ -1,1 +1,70 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>TodoList</title>
+     <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    .green{
+        color: lightgreen;
+    }
+    .blue{
+        color: skyblue;
+    }
+    .red{
+        color: lightcoral;
+    }
+   
+</style>
+                 
+ </head>
+ <body>
+     <div class="container">
+         <div class="col mx-auto col-md-8 mt-3 text-center">
+             <div class="alert align-item-center" id="message"></div>
+             <form id="formField">
+                 <div class="input-group mb-3">
+                 <input type="text" class="form-control" id="itemInput" placeholder="Add Task...">
+                 <button class="btn btn-primary">ADD ITEM </button>
+                </div>
+             </form>
+             <ul class="nav nav-tabs">
+                <li class="nav-item" data-type="all">
+                  <a class="nav-link active" aria-current="page" href="#">All</a>
+                </li>
+                <li class="nav-item" data-type="todo">
+                  <a class="nav-link" href="#">To Do</a>
+                </li>
+                <li class="nav-item" data-type="done">
+                  <a class="nav-link" href="#">Completed</a>
+                </li>
+              </ul>
+
+
+              <!--items list-->
+              <ul class="list-group list-group-flush" id="item-List">
+                  <li class="list-group-item d-flex justify-content-between align-items-center">
+                      <span>Task 1</span>
+                      <span>
+                          <a ><i class="fa-regular fa-circle-check green"></i></a>
+                          <a ><i class="fa fa-pencil-square-o blue" ></i></a>
+                          <a ><i class="fa-regular fa-circle-xmark red"></i></a>
+                      </span>
+                  </li>
+
+              </ul>
+              <input type="hidden" id="objIndex" value="">
+              <input type="hidden" id="tabValue" value="all">
+         </div>
+     </div>
+
+
+     <script src="main.js"></script>
+ </body>
+ </html>
