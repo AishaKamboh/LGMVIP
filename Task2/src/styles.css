@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  background-color: black;
+}
+#head{
+  height: 50px;
+  background-color: violet;
+}
+#hd{
+  float: left;
+  margin-left: 30px;
+  margin-top: 13px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: violet;
+}
+#btn{
+  cursor: pointer;
+  float: right;
+  margin-right: 40px;
+  margin-top: 10px;
+  background-color: rgb(228, 42, 92);
+  height: 30px;
+  width: 100px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+
+}
+.App1 {
+  font-family: sans-serif;
+  text-align: center;
+  margin-left:10px;
+  margin-top: 20px;
+}
+.prof{
+  margin-left: 20px;
+  margin-top: 30px;
+}
+p{
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  font-weight: bold
+  
+}
+img{
+  border-radius: 50%;
+}
+
