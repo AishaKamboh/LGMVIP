@@ -11,7 +11,7 @@ IDE used: VS Code
 Click here to view the Task: https://aishakamboh.github.io/LGMVIP/Task1/
 
 
-# Task1: Create React App
+# Task2: Create React App
 
 Technologies: HTML, CSS , Reactjs
 
